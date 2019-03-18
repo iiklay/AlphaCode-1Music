@@ -20,7 +20,7 @@ const gif = require("gif-search");
 
 const client = new Discord.Client({disableEveryone: true});
 
-const prefix = "!";
+const prefix = "1";
 /////////////////////////
 ////////////////////////
 
@@ -46,7 +46,8 @@ client.on('message', async msg =>{
 /////////////////////////
 ////////////////////////
 //////////////////////
-client.on('message', async msg =>{
+client.on('message', async msg =>{ 
+
 	if (msg.author.bot) return undefined;
     if (!msg.content.startsWith(prefix)) return undefined;
     
